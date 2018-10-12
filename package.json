@@ -1,0 +1,16 @@
+{
+  "name": "chaierrortobool",
+  "version": "1.0.0",
+  "description": "Return a boolean true or false with chai.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "nyc mocha --require ts-node/register --watch-extensions ts,tsx \\\"./test/**/*.{ts,tsx}\\\""
+  },
+  "keywords": [
+    "chai",
+    "testing"
+  ],
+  "author": "Justin Lovinger <npm@justinlovinger.com> (https://twitter.com/JustinLovinger)",
+  "license": "MIT"
+}
