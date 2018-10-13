@@ -1,7 +1,7 @@
 {
-  "name": "chaierrortobool",
+  "name": "chai-return-bool",
   "version": "1.0.0",
-  "description": "Return a boolean true or false with chai.js",
+  "description": "Return a boolean with chai.js instead of raising an assertion",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -19,7 +19,8 @@
   },
   "keywords": [
     "chai",
-    "testing"
+    "testing",
+    "test"
   ],
   "author": "Justin Lovinger <npm@justinlovinger.com> (https://twitter.com/JustinLovinger)",
   "license": "MIT",

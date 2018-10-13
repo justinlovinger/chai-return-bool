@@ -1,7 +1,7 @@
 import { AssertionError } from 'chai';
 
-export function chaiErrorToBool<T>(block: () => T): T extends Promise<any> ? Promise<boolean> : boolean
-export function chaiErrorToBool(block: () => any): boolean | Promise<boolean> {
+export function returnBool<T>(block: () => T): T extends Promise<any> ? Promise<boolean> : boolean
+export function returnBool(block: () => any): boolean | Promise<boolean> {
     try {
         const result = block();
 
