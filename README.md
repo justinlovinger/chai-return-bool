@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/JustinLovinger/chai-return-bool.svg?branch=master)](https://travis-ci.org/JustinLovinger/chai-return-bool)
+[![Coverage Status](https://coveralls.io/repos/github/JustinLovinger/chai-return-bool/badge.svg?branch=master)](https://coveralls.io/github/JustinLovinger/chai-return-bool?branch=master)
+[![npm version](https://badge.fury.io/js/chai-return-bool.svg)](https://badge.fury.io/js/chai-return-bool)
+
+
 # chai-return-bool
 
 A simple utility library to return a boolean with [chai.js](https://github.com/chaijs/chai) instead of raising an exception.

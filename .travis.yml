@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+- stable
+
+install:
+- npm install
+
+script:
+- npm run test
+
+after_success:
+- npm run reportcoverage
+
+before_deploy:
+- npm run build
+
+deploy:
+  provider: npm
+  email: npm@justinlovinger.com
+  api_key:
+    secure: FFBV/T5TuIYlBwV1tJUcWvHiYHjkA8SPHnm4WRs7Ky2wtImnqZdt0d9WHZ8/8zAZ2qvdMDgbZ3vtACL/rCFtoTT6BdmPRbql81Oe4jmkv6aQpkgfsW29DIXp8c+qC51MfdkLamAbylhVYUikkkZ+aWVf/ySwb5x6fqcLZ6I2oLGwXGo9O1oFjMym2MCUJBJ5R5n/bYDQg4u+BkM669VTLIvp+3zwrD1DUDqNKSPYDszXUjYpxJI+cBSWvlS78Bq6z+gyt4i78vYwE1tR39gA6fMe/pLKRILRFcalYyuOpndsNS+p5qG1VsltgBsksGDXluMOqvmLlYW3frcVQbB89gxaq6SNQujH2vlPQxNxLxlKIQaNrW7x/qTJ3f/D+VSL1HYsbsSLbO+X6wRhbjv+cogGv41rvB42dvQOIbilYLwSJioHVINor5DAakbAqGLct4yHbHHFF2c5J4yeAy/Y8JP3dZGvFJFwOq61d9I7JuhoZbDZqlDADnyVtAdxRB+qGBJJ5DdK6w1Yn/NqceMyhv8ICeJP/OnMlRUkx5qBnYJBLn0V8K9tf1H9p3pSu9g1Oc+Et1UAny+girzhC/zxMn4GiRGCteFioxKh5pqUw8rqIW6OD693tW1iNRkHNgxMWK5X2VuVkbg0Rkevx1AO8DFsQRmtWoLns1qSgcZU9YM=
+  skip_cleanup: true
+  on:
+    repo: JustinLovinger/chai-return-bool
+    branch: master
+    tags: true
+    condition: "$TRAVIS_TAG =~ ^v[0-9]+\\.[0-9]+\\.[0-9]+"
