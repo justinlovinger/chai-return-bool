@@ -1,5 +1,5 @@
 import 'mocha';
-import { expect, AssertionError } from 'chai';
+import { expect } from 'chai';
 
 import { returnBool } from '../src/index';
 

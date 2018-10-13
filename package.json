@@ -1,7 +1,7 @@
 {
   "name": "chai-return-bool",
   "version": "1.0.0",
-  "description": "Return a boolean with chai.js instead of raising an assertion",
+  "description": "Return a boolean with chai.js instead of raising an exception",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
